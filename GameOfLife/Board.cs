@@ -60,7 +60,10 @@ namespace GameOfLife
 
 				for (int x = 0; x <= length-1; x++)
 				{
-					row += outputarray[x, y].ToString();
+					if(outputarray[x, y]==1)
+						row += "+";
+					else
+						row += " ";
 
 				}
 
